@@ -1,0 +1,25 @@
+ul.timeline {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    li {
+        display: block;
+        margin-bottom: 30px;
+        h2 {
+            margin: 5px 0px;
+            font-size: 20px;
+            a {
+                color: #505050;
+                text-decoration: none;
+            }
+        }
+        .node-time {
+            font-size: 13px;
+        }
+        .desc {
+            font-weight: 100;
+            color: #999;
+        }
+    }
+}

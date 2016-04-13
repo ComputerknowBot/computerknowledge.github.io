@@ -1,0 +1,23 @@
+# Site settings
+port: 80
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://codingdash.com" # the base hostname & protocol for your site
+title: "Technology, design and thoughts"
+description: "Personal blog and portfolio of Ritesh Shrivastav"
+
+author: Ritesh Shrivastav
+author_img: "resources/uploads/codingdash-ritesh.png"
+email: ritesh@codingdash.com
+twitter_username: codingdash
+github_username:  codingdash
+
+
+# Post settings
+excerpt_separator: <!--more-->
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+    style: :compressed

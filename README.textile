@@ -1,0 +1,7 @@
+h1. Codingdash.com
+
+Serving codingdash.com!
+
+h1. License
+
+The directories and their contents in this website and in repository are Copyright to Ritesh Shrivastav. You may not reuse anything published in this repository, without my permission.
