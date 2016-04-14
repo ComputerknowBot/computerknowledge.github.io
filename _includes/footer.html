@@ -19,4 +19,11 @@
 	       $(".app").removeClass('fixed-header');
 	    }
 	});
+
+    $(document).ready(function(){
+        var activePage = window.location.pathname.split('/')[1];
+        if (activePage) {
+            $("li[data-key='" + activePage + "']").addClass('active');
+        }
+    });
 </script>

@@ -1,20 +1,19 @@
-{% assign current = page.url | downcase | split: '/' %}
 <div class="header smooth">
 	<div class="logo-container">
 		<a href="{{ site.url }}/" class="logo smooth"></a>
 	</div>
 	<div class="nav-container top-nav clearfix smooth">
 		<ul class="nav-links pull-right">
-			<li {% if current[1] == 'search' %} class="active" {% endif %}>
+			<li data-key="search">
 				<a href="{{ site.url }}/search"><i class="fa fa-search"></i></a>
 			</li>
-			<li {% if current[1] == 'about' %} class="active" {% endif %}>
+			<li data-key="about">
 				<a href="{{ site.url }}/about">About</a>
 			</li>
-			<li {% if current[1] == 'team' %} class="active" {% endif %}>
+			<li data-key="team">
 				<a href="{{ site.url }}/team">Team</a>
 			</li>
-			<li {% if current[1] == 'contact' %} class="active" {% endif %}>
+			<li data-key="contact">
 				<a href="{{ site.url }}/contact">Contact</a>
 			</li>
 		</ul>
@@ -28,22 +27,22 @@
 			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 		</ul>
 		<ul class="nav-links pull-left">
-			<li {% if current[1] == 'news' %} class="active" {% endif %}>
+			<li data-key="news">
 				<a href="{{ site.url }}/news">News</a>
 			</li>
-			<li {% if current[1] == 'tutorial' %} class="active" {% endif %}>
+			<li data-key="tutorial">
 				<a href="{{ site.url }}/tutorial">Tutorials</a>
 			</li>
-			<li {% if current[1] == 'legends' %} class="active" {% endif %}>
+			<li data-key="legends">
 				<a href="{{ site.url }}/legends">Legends</a>
 			</li>
-			<li {% if current[1] == 'definition' %} class="active" {% endif %}>
+			<li data-key="definition">
 				<a href="{{ site.url }}/definition">Definitions</a>
 			</li>
-			<li {% if current[1] == 'gallery' %} class="active" {% endif %}>
+			<li data-key="gallery">
 				<a href="{{ site.url }}/gallery">Photos</a>
 			</li>
-			<li {% if current[1] == 'videos' %} class="active" {% endif %}>
+			<li data-key="videos">
 				<a href="{{ site.url }}/videos">Videos</a>
 			</li>
 		</ul>
