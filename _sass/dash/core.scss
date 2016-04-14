@@ -57,9 +57,14 @@ div[class^="col-"] {
 						background: #3C3C3C;
 					}
 				}
+				li.active {
+					a {
+						background: #3C3C3C;
+					}
+				}
 			}
 			line-height: 30px;
-			margin-left: 80px;
+			padding-left: 80px;
 			background-color: #f60;
 		}
 		.top-nav {
@@ -69,6 +74,11 @@ div[class^="col-"] {
 
 					}
 					a:hover {
+						background: #f60;
+					}
+				}
+				li.active {
+					a {
 						background: #f60;
 					}
 				}
@@ -103,7 +113,7 @@ div[class^="col-"] {
 .fixed-header {
 	.header {
 		.nav-container {
-			margin-left: 46px;
+			padding-left: 46px;
 		}
 		.top-nav {
 			display: none;
