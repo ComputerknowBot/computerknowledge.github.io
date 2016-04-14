@@ -9,8 +9,8 @@
 port: 80
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost" # the base hostname & protocol for your site
-title: "Technology, design and thoughts"
-description: "Personal blog and portfolio of Ritesh Shrivastav"
+title: "Computer Knowledge - Just more than infinite"
+description: "Help, tips and tricks for advance technical users for their help. Some posts also relevant for those facing other problems."
 
 author: Ritesh Shrivastav
 author_img: "resources/uploads/codingdash-ritesh.png"

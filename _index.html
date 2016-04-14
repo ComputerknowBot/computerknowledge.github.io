@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<div class="container">
+
+
+
+
+    <div class="row no-margin">
+        <div class="col-sm-5 no-padding">
+            <div id="about-dash">
+                <h4>
+                    Hi, I'm Ritesh.
+                </h4>
+                <p class="larger">
+                    I'm full-stack developer at Exotel.
+                </p>
+                <p>
+                    I write in depth article about programming, technology and design, as well as share things what I observe and about books and nature.
+                </p>
+            </div>
+            <ul class="grid post">
+                {% for post in site.categories.posts limit:10 %}
+                <li>
+                    <header class="entry-title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <div class="content">
+                                {% if post.image %}
+                                    <img src="{{ site.url }}/resources/{{ post.image }}" alt="" class="img-responsive">
+                                {% endif %}
+                                <h2>{{ post.title }}</h2>
+                                <p class="linear">
+                                    {{ post.tagline }}
+                                </p>
+                            </div>
+                        </a>
+                    </header>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="text-center">
+                <a href="{{ site.url }}/posts/" class="btn btn-default btn-lg">View more posts</a>
+                <p class="foot-note">{{ site.categories.posts | size }} posts since '14</p>
+            </div>
+        </div>
+
+        <div class="col-sm-7 no-padding">
+            <ul class="grid photos">
+                {% for post in site.categories.photos limit:5 %}
+                <li>
+                    <header class="entry-title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <div class="content">
+                                <img src="{{ site.url }}/resources/{{ post.image }}" alt="" class="img-responsive" style="width: 100%">
+                                <div class="content-caption">
+                                    <h2>{{ post.title }}</h2>
+                                    <p class="linear">
+                                        {{ post.tagline }}
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </header>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <div class="text-center">
+                <a href="{{ site.url }}/photos/" class="btn btn-default btn-lg">View more photos</a>
+                <p class="foot-note">{{ site.categories.photos | size }} posts since '15</p>
+            </div>
+        </div>
+    </div>
+</div>

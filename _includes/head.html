@@ -1,9 +1,6 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <meta name="robots" content="noindex">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   {% if page.description %}
@@ -11,7 +8,13 @@
   {% else %}
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% endif %}
-  <meta name="author" content="{{ site.author }}"/>
+
+  {% if page.author %}
+    <meta name="author" content="{{ page.author }}"/>
+  {% else %}
+    <meta name="author" content="{{ site.author }}"/>
+  {% endif %}
+  
   <meta name="copyright" content="&copy; Copyright 2014 to Present"/>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml">
