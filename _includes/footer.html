@@ -10,4 +10,11 @@
     // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     // ga('create', 'UA-50833602-2', 'auto');
     // ga('send', 'pageview');
+    $(window).scroll(function() {
+	    if ($(this).scrollTop() > 100) { // this refers to window
+	       $(".app").addClass('fixed-header');
+	    } else {
+	       $(".app").removeClass('fixed-header');
+	    }
+	});
 </script>

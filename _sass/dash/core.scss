@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    background: #E6E6E6;
+}
+.relative {
+	position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+div[class^="col-"] {
+	padding: 0px;
+}
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.smooth {
+	-webkit-transition: all 0.31s ease;
+	-moz-transition: all 0.31s ease;
+	-ms-transition: all 0.31s ease;
+	-o-transition: all 0.31s ease;
+	transition: all 0.31s ease;
+}
+.app {
+	.header {
+		position: relative;
+		.logo-container {
+			.logo {
+				background: url('../logo.png');
+				background-color: #000;
+				background-size: cover;
+				display: block;
+				height: 80px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 80px;
+			}
+		}
+		.nav-container {
+			ul.nav-links {
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+				li {
+					display: inline-block;
+					a {
+						text-decoration: none;
+						color: #FFF;
+						display: block;
+						padding: 8px 15px;
+					}
+					a:hover {
+						background: #3C3C3C;
+					}
+				}
+			}
+			line-height: 30px;
+			margin-left: 80px;
+			background-color: #f60;
+		}
+		.top-nav {
+			ul.nav-links {
+				li {
+					a {
+
+					}
+					a:hover {
+						background: #f60;
+					}
+				}
+			}
+			line-height: 18px;
+			background-color: #3C3C3C;
+		}
+		background: #3C3C3C;
+	}
+
+	.content {
+		background: #E6E6E6;
+	}
+
+	.footer {
+	    background: #3C3C3C;
+	    border-top: 3px solid #0E0E0E;
+	    bottom: 0px;
+	    color: #FFF;
+	    margin-top: 50px;
+	    padding: 30px;
+		position: absolute;
+	    width: 100%;
+	}
+	font-family: $font-stack;
+	font-size: 13px;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.fixed-header {
+	.header {
+		.nav-container {
+			margin-left: 46px;
+		}
+		.top-nav {
+			display: none;
+		}
+		.logo-container {
+			.logo {
+				height: 46px;
+				width: 46px;
+			}
+		}
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		z-index: 1;
+	}
+	.content {
+		margin-top: 46px;
+	}
+}

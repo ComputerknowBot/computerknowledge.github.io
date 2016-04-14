@@ -1,4 +1,57 @@
 ---
 layout: default
 ---
-{{ content }}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+			<div id="post">
+				<div class="post-header smooth {% if page.image %} img-post-header {% endif %}" style="
+				{% if page.image %}
+					background-image: url('{{ site.url }}/resources/{{page.image }}');
+				{% endif %}
+				">
+					<div class="header-content">
+						<h1>{{page.title}}</h1>
+						{% if page.meta %}
+						<div class="post-meta">
+							{{page.meta}}
+						</div>
+						{% endif %}
+					</div>
+				</div>
+				<div class="post-content">
+					{{ content }}
+				</div>
+				<div class="post-footer">
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="section">
+				<div class="section-header">
+					Recent posts
+				</div>
+				<div class="section-body">
+					<ul class="recent-post-list">
+		                {% for post in site.posts limit:10 %}
+		                <li>
+		                	{% include post/post_badge.html %}
+		                </li>
+		                {% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="section-header">
+					Topics
+				</div>
+				<div class="section-body">
+					<ul class="topic-badges">
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

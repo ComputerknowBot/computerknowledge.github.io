@@ -1,0 +1,26 @@
+.section {
+	.section-header {
+		background: #3C3C3C;
+		padding: 8px 15px;
+		font-weight: bold;
+		font-size: 15px;
+		color: #FFF;
+	}
+	.section-body {
+		padding: 8px 15px;
+		background: #FFF;
+		ul.recent-post-list {
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		ul.topic-badges {
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+	background: #BDBDBD;
+	padding: 0px 1px 1px 1px;
+	margin-bottom: 10px;
+}

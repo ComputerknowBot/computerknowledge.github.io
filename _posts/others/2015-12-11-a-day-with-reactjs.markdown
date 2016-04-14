@@ -1,0 +1,26 @@
+---
+layout: post
+category: posts
+title:  "A day with React.js"
+date:   2015-12-11 11:16:25 +0530
+tagline: "Thoughts on React.js and how it's making life easier"
+permalink: /post/a-day-with-reactjs/
+---
+In the last project when I started thinking about client side stack to manage my JavaScript code then the pointer moved to React.js, which is a JavaScript framework by Facebook. Earlier I wanted to use Oileus.js which I had written earlier but because Oileus.js was failing to cover many use cases I decided not to go with this on current project. Use cases where Oileus.js failed I will be covering in another post. In this post I will be sharing thoughts and quick tour of React.js which I have experienced while writing code in this. This post doesn't contains explanation to the questions related to "how to write component", since there are a lot of good resources on global village covering this kind of tutorials.
+
+
+Facebook developers describe React.js as "A JavaScript library for building user interfaces", and this can be used as view of MVC. Here in React.js the complexity of a interface is divided into set of components where each component becomes responsible for specific features and functionality. In a clean way, component can be developed to cover complex use cases without blocking other components. Once the component is written it can be used by adding tags similar to HTML tags in JSX.
+
+Each component contains definition to a render method, where it expects to return template for the component while being rendered, it can be written in JSX format which is again a JavaScript syntax extension looks similar to XML. Where you can start writing component template in HTML codes, but there is difference in HTML tags and react components. A react component can communicate with other component by refs, state or properties and when there will be any change in state or property the component re-render the component template. Here refs array is a special list which holds reference to the child components and can be used to pass message to the child components.
+
+React component can be assumed as classes and when a component is called(or rendered); an instance of the component class will be created. All the methods defined in the component definition will be available to use through the instance(if you have access to instance, with the help of refs it can be achieved easily). If you want to have some static property or methods, then with the help of "statics" property it can be achieved. For example if A is a component then methods or properties defined under "statics" will be available without creating instance of component or without rendering actual component. This can be used, when you want to write some utility method or want to maintain static state of a component.
+
+The strong feature of React I feel is re-rendering the components, here while re-rendering components you can't see any flickering in the components because it re-render component wisely. Where the DOM, which are not changed doesn't replaced and only the node where the values are changed will get replaced. Here to track DOM and for efficient rendering React uses [virtual-dom](https://github.com/Matt-Esch/virtual-dom) and [here you can find](http://calendar.perfplanet.com/2013/diff/) the explanation about how React diff algorithm works.
+
+Common issue I have seen when you are using React.js for first time, because for me I ran in confusion that from where to start using components in my web app and how to structure components so that it can be reused and what are the things can be considered as best practices while loading an app. To summarize solution to this issue, I consider where in some web application only we want to write few components in React but not all. Then converting a non-component based app to React app can be done by writing small-small component by features and start using those components. In this case, component can be rendered at the place-holders where the HTML for those component was already there. For example if a large application is live and in production it is costly and time consuming task to write the whole web app into a React.js app.
+
+But in next scenario where you want to write complete web application in React.js, you will need to decide that how the components will be organized and what will be the root component which will take care of rendering other components. And initially the root component will be rendered when the document is ready.
+
+### Conclusion
+
+React is great if you want to write a web application or want to reduce complexity of features in smaller components. Starting code for React is easy because of its simply written docs. But when it comes to web applications which are intended to be developed for SEO friendly, it brings another overhead because when the JavaScript is not enabled in browser it will not work and crawlers can't crawl page information. It also has few other issues such as component definitions needs to be concatenated into a single file, to save on HTTP requests and also to needs to be minified to reduce the download size. To avoid issues we can use tools like browserify.
