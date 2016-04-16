@@ -6,7 +6,7 @@ date: 2013-03-08 11:16:25 +0530
 meta: "The Father of Video Games"
 image: 2013/03/08/ralph-h-baer.jpg
 permalink: /legends/ralph-h-baer-father-of-video-games
-author: Ritesh
+author: Ritesh Shrivastav
 ---
 Ralph H. Baer (born March 8, 1922) is a German-born American video game pioneer, inventor, engineer, known as "The Father of Video Games", who is noted for his many contributions to games and the video game industry. In 2006, he was awarded the National Medal of Technology for inventing the home console for video games and spawning the video game industry.
 
