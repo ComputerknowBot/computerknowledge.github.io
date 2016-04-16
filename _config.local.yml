@@ -23,3 +23,7 @@ markdown: kramdown
 # Sass settings
 sass:
     style: :compressed
+
+# syntax-highlighting:
+#   enabled : true
+#   css: syntax.css

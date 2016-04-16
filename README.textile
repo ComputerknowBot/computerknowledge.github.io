@@ -1,6 +1,6 @@
-h1. Codingdash.com
+h1. computerknow.org
 
-Serving codingdash.com!
+Serving computerknow.org!
 
 h1. License
 
