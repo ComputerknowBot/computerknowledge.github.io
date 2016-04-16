@@ -1,0 +1,17 @@
+<article class="cover-story">
+	<div class="cover-image" style="{% if post.image %}background-image: url('{{ site.url }}/resources/{{post.image }}');{% endif %}"></div>
+	<a class="cover-navigate" href="{{ post.url | prepend: site.baseurl }}"></a>
+	<header class="cover-header">
+		<h2 class="cover-title">
+			<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		</h2>
+		<ul class="cover-meta">
+			<li>by 
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					{% if post.author %}{{ post.author }} {% else %} {{ site.author }} {% endif %}
+				</a>
+			</li>
+			<li><i class="fa fa-clock-o"></i> 1 hr ago</li>
+		</ul>
+	</header>
+</article>

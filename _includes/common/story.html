@@ -1,0 +1,15 @@
+<article class="story">
+	<a href="{{ post.url | prepend: site.baseurl }}" class="story-image" style="{% if post.image %}background-image: url('{{ site.url }}/resources/{{post.image }}');{% endif %}"></a>
+	<h4 class="story-title">
+		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</h4>
+	<ul class="story-meta">
+		<li>
+			by 
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				{% if post.author %}{{ post.author }} {% else %} {{ site.author }} {% endif %}
+			</a>
+		</li>
+		<li><i class="fa fa-clock-o"></i> 1 hr ago</li>
+	</ul>
+</article>

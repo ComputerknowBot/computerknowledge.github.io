@@ -1,6 +1,6 @@
 ---
 layout: post
-category: posts
+category: legends
 title:  "Stephen Cole Kleene"
 date:   2015-01-25 11:16:25 +0530
 meta: "Founder of recursion theory"

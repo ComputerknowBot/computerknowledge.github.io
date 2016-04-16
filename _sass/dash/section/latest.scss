@@ -25,7 +25,7 @@
 				    padding-top: 50%;
 				    margin-bottom: 8px;
 				    position: relative;
-					
+
 					border-radius: 4px;
 					background-color: #000;
 					background-image: url('../resources/uploads/search/search-cover.jpg');
@@ -35,16 +35,18 @@
 					height: 0;
 					width: 100%;
 					overflow: hidden;
+					transition:all 5s ease;
 				}
 				.story-title {
 					font-size: 16px;
 					line-height: 20px;
 					margin-bottom: 0;
-					padding: 0px 4px;
+					padding: 4px 8px;
 				}
 				ul.story-meta {
 					li {
 						display: inline-block;
+						margin-right: 20px;
 						a {
 							color: #AAA;
 						}
@@ -55,14 +57,14 @@
 					line-height: 20px;
 					overflow: hidden;
 					color: #AAA;
-					padding: 0px 4px;
-					padding-top: 4px;
+					padding: 4px 8px;
 				}
 				padding: 2px;
 				border-radius: 4px;
 				background: #FFF;
 				margin: 5px;
 				margin-bottom: 10px;
+				overflow: hidden;
 			}
 			margin: 0px;
 			padding: 0px;

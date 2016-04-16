@@ -3,6 +3,15 @@ layout: page
 title: Videos - Computer Knowledge
 permalink: /videos/
 ---
-<div class="container">
-
-</div>
+{% if site.categories.video | size > 0 %}
+	
+{% else %}
+	<div id="error-page">
+		<div class="container">
+			<h1>No videos to show.</h1>
+			<p>
+				<a href="{{site.url}}"><i class="fa fa-arrow-left"></i> Go home</a>
+			</p>
+		</div>
+	</div>
+{% endif %}

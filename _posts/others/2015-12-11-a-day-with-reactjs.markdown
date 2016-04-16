@@ -1,6 +1,6 @@
 ---
 layout: post
-category: posts
+category: others
 title:  "A day with React.js"
 date:   2015-12-11 11:16:25 +0530
 tagline: "Thoughts on React.js and how it's making life easier"
