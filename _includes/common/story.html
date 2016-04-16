@@ -10,6 +10,9 @@
 				{% if post.author %}{{ post.author }} {% else %} {{ site.author }} {% endif %}
 			</a>
 		</li>
-		<li><i class="fa fa-clock-o"></i> 1 hr ago</li>
+		<li>
+			<i class="fa fa-clock-o"></i>
+			<time class="timeago" datetime="{{ post.date }}">{{ post.date }}</time>
+		</li>
 	</ul>
 </article>
