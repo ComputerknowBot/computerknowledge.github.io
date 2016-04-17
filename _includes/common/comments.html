@@ -1,0 +1,26 @@
+<div id="comments">
+{% if site.env and site.env == "prod" %}
+	<div id="disqus_thread">
+		<h3 class="message">Loading comments...</h3>
+	</div>
+	<script>
+		var disqus_config = function () {
+			this.page.url = "{{ page.url | prepend: site.url }}";
+			this.page.identifier = "{{ page.url }}";
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = '//computerknowledge.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>
+		Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+	</noscript>
+{% else %}
+	<div id="disqus_thread">
+		<h3 class="message">Comments will be visible on production only. :)</h3>
+	</div>
+</div>
+{% endif %}

@@ -1,4 +1,5 @@
 # Site settings
+env: local
 port: 80
 assets_version: 0.0.0
 
