@@ -1,33 +1,30 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-    {% if page.title %}
-      {{ site.title | prepend: " - " | prepend: page.title }}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {% if page.title %}
+            {{ site.title | prepend: " - " | prepend: page.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
     {% else %}
-      {{ site.title }}
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {% endif %}
-  </title>
-
-  {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-  {% else %}
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  {% endif %}
-
-  {% if page.author %}
-    <meta name="author" content="{{ page.author }}"/>
-  {% else %}
-    <meta name="author" content="{{ site.author }}"/>
-  {% endif %}
-
-  <meta name="copyright" content="&copy; Copyright 2010 to Present"/>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml">
-  <link rel="icon" href="{{ site.url }}/logo.png?v=1.0.0" type="image/png">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}" type='text/css'>
-  <script src="{{ site.url }}/js/jquery.min.js"></script>
-  <script src="{{ site.url }}/js/bootstrap.min.js"></script>
-  <script src="{{ site.url }}/js/plugins/jquery.timeago.js"></script>
+    <meta name="copyright" content="&copy; Copyright 2010 to Present"/>
+    {% if page.robots %}
+        <meta name="robots" content="{{ page.robots }}">
+    {% else %}
+        <meta name="robots" content="index follow">
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml">
+    <link rel="icon" href="{{ site.url }}/logo.png?v=1.0.0" type="image/png">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}" type='text/css'>
+    <script src="{{ site.url }}/js/jquery.min.js"></script>
+    <script src="{{ site.url }}/js/bootstrap.min.js"></script>
+    <script src="{{ site.url }}/js/plugins/jquery.timeago.js"></script>
 </head>
