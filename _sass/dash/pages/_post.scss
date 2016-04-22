@@ -83,3 +83,21 @@
 		padding: 8px 15px;
 	}
 }
+
+ul.tag-list {
+	li {
+		a {
+			display: block;
+			color: #FFF;
+			background: rgba(216, 101, 25, 0.87);
+			padding: 4px 8px;
+			margin: 2px 4px;
+			text-decoration: none;
+			font-size: 12px;
+		}
+		display: inline-block;
+	}
+	list-style: none;
+    padding: 2px;
+    margin: 0px;
+}

@@ -5,6 +5,10 @@ title:  "Changing MBR to GPT in Mac OS X"
 date: 2013-09-07 18:20:25 +0530
 permalink: /article/changing-mbr-to-gpt-in-mac-os-x
 author: Ritesh Shrivastav
+tags:
+  - mbr
+  - gpt
+  - gdisk
 ---
 
 First for installing the windows operating system in Apple Macbooks, we must convert the partitioning scheme from GPT(GUID Partition Table) to MBR(Master Boot Record). The conversion can be carried out by the tool [gdisk](http://www.rodsbooks.com/gdisk/){:target="_blank"}. The documentation they have provided is well written for the particular operation. Now let's discuss, why do?
