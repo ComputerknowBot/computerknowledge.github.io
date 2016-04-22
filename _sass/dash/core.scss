@@ -10,10 +10,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0px;
 	margin: 0px;
 }
-div[class^="col-"] {
-	padding: 0px;
-}
-.row {
+.section-row {
+	div[class^="col-"] {
+		padding: 0px;
+	}
 	margin-left: 0px;
 	margin-right: 0px;
 }
