@@ -14,6 +14,9 @@
     {% else %}
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {% endif %}
+    {% if page.keywords %}
+        <meta name="keywords" content="{{ page.keywords }}">
+    {% endif %}
     <meta name="copyright" content="&copy; Copyright 2010 to Present"/>
     {% if page.robots %}
         <meta name="robots" content="{{ page.robots }}">

@@ -1,0 +1,64 @@
+ul.team-list {
+	li {
+		.team-member {
+			.ticker {
+				img {
+					border-radius: 3px;
+				}
+				.social-connect {
+					position: absolute;
+					bottom: 10px;
+					width: 100%;
+					text-align: center;
+					display: none;
+					a {				
+					    background: rgba(255, 255, 255, 0.48);
+					    border-color: rgba(204, 204, 204, 0.49);
+						color: #333;
+					}
+				}
+				position: relative;
+			}
+			h4 {
+				padding: 8px 15px;
+				text-align: center;
+			}
+			.title {    
+				padding: 0px 15px;
+			    text-align: center;
+			    font-size: 12px;
+			}
+			.description {
+				padding: 8px 15px;
+			    display: none;
+			    background: #FFF;
+			    border-radius: 4px;
+			    font-size: 13px;
+			    line-height: 22px;
+			}
+			padding: 3px;
+			border-radius: 4px;
+			background: #EEE;
+			margin: 5px;
+			margin-bottom: 10px;
+			overflow: hidden;
+		}
+		margin: 0px;
+		padding: 0px;
+	}
+	li:hover {
+		.team-member {
+			.ticker {
+				.social-connect {
+					display: block;
+				}
+			}
+		}
+		.description {
+			display: block;
+		}
+	}
+	list-style: none;
+	padding: 0px;
+	margin:0px;
+}
