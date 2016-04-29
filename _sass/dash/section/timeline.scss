@@ -45,8 +45,10 @@ $timeline-icon-background: #999;
 				.image {
 					img {
 						width: 100%;
+				    	border-radius: 4px;
 					}
-					height: 400px;
+					background: #FFF;
+					padding: 2px;
 				    overflow: hidden;
 				    border-radius: 4px;
 				}

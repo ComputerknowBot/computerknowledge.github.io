@@ -1,0 +1,41 @@
+---
+layout: post
+category: tutorial
+title:  "Firewall"
+date: 2010-12-21 20:09:25 +0530
+meta: "How firewalls work?"
+image: 2010/12/21/firewall.jpg
+permalink: /tutorial/firewall
+author: Ritesh Shrivastav
+---
+If you have been using Internet on a regular basis or working in a large company and surf the Internet while you are at work, you must have surely come across the term firewall. You might have also heard of people saying “firewalls protect their computer from web attacks and hackers” or “a certain website has been blocked by firewall in their work place”. If you have ever wondered to know what exactly is this firewall and how it works, here we go. In this post I will try to explain “How firewalls work” in a layman’s terms.
+
+### How they Works
+Firewalls are basically a barrier between your computer (or a network) and the Internet (outside world). A firewall can be simply compared to a security guard who stands at the entrance of your house and filters the visitors coming to your place. He may allow some visitors to enter while denying others whom he suspects of being intruders. Similarly a firewall is a software program or a hardware device that filters the information (packets) coming through the Internet to your personal computer or a computer network.
+
+Firewalls may decide to allow or block network traffic between devices based on the rules that are pre-configured or set by the firewall administrator. Most personal firewalls such as Windows firewall operate on a set of pre-configured rules that are most suitable under normal circumstances so that the user need not worry much about configuring the firewall.
+
+Personal firewalls are easy to install and use and hence preferred by end-users for use on their personal computers. However large networks and companies prefer those firewalls that have plenty of options to configure so as to meet their customized needs. For example, a company may set up different firewall rules for FTP servers, Telnet servers and Web servers. In addition the company can even control how the employees connect to the Internet by blocking access to certain websites or restricting the transfer of files to other networks. Thus in addition to security, a firewall can give the company a tremendous control over how people use the network.
+
+Firewalls use one or more of the following methods to control the incoming and outgoing traffic in a network:
+
+1. **Packet Filtering:** In this method packets (small chunks of data) are analyzed against a set of filters. Packet filters has a set of rules that come with accept and deny actions which are pre-configured or can be configured manually by the firewall administrator. If the packet manages to make it through these filters then it is allowed to reach the destination; otherwise it is discarded.
+
+2. **Stateful Inspection:** This is a newer method that doesn’t analyze the contents of the packets. Instead it compares certain key aspects of each packet to a database of trusted source. Both incoming and outgoing packets are compared against this database and if the comparison yields a reasonable match, then the packets are allowed to travel further. Otherwise they are discarded.
+
+### Firewall Configuration
+Firewalls can be configured by adding one or more filters based on several conditions as mentioned below:
+
+1. **IP addresses:-** In any case if an IP address outside the network is said to be unfavorable, then it is possible to set filter to block all the traffic to and from that IP address. For example, if a cetain IP address is found to be making too many connections to a server, the administrator may decide to block traffic from this IP using the firewall.
+
+2. **Domain names:-** Since it is difficult to remember the IP addresses, it is an easier and smarter way to configure the firewalls by adding filters based on domain names. By setting up a domain filter, a company may decide to block all access to certain domain names, or may provide access only to a list of selected domain names.
+
+3. **Ports/Protocols:-** Every service running on a server is made available to the Internet using numbered ports, one for each service. In simple words, ports can be compared to virtual doors of the server through which services are made available. For example, if a server is running a Web (HTTP) service then it will be typically available on port 80. In order to avail this service, the client needs to connect to the server via port 80. Similarly different services such as Telnet (Port 23), FTP (port 21) and SMTP (port 25) services may be running on the server. If the services are intended for the public, they are usually kept open. Otherwise they are blocked using the firewall so as to prevent intruders from using the open ports for making unauthorized connections.
+
+4. **Specific words or phrases:-** A firewall can be configured to filter one or more specific words or phrases so that, both the incoming and outgoing packets are scanned for the words in the filter. For example, you may set up a firewall rule to filter any packet that contains an offensive term or a phrase that you may decide to block from entering or leaving your network.
+
+### Hardware vs Software Firewall
+Hardware firewalls provide higher level of security and hence preferred for servers where security has the top most priority whereas, the software firewalls are less expensive and are most preferred in home computers and laptops. Hardware firewalls usually come as an in-built unit of a router and provide maximum security as it filters each packet in the hardware level itself even before it manages to enter your computer. A good example is the Linksys Cable/DSL router.
+
+### If You Think/Ask Why Firewall?
+Firewalls provide security over a number of online threats such as Remote login, Trojan backdoors, Session hijacking, DOS & DDOS attacks, viruses, cookie stealing and many more. The effectiveness of the security depends on the way you configure the firewall and how you set up the filter rules. However major threats such as DOS and DDOS attacks may sometimes manage to bypass the firewalls and do the damage to the server. Even though firewall is not a complete answer to online threats, it can most effectively handle the attacks and provide security to the computer up to the maximum possible extent.
