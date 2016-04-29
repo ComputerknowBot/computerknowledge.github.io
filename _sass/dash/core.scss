@@ -11,11 +11,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0px;
 }
 .section-row {
-	div[class^="col-"] {
-		padding: 0px;
-	}
 	margin-left: 0px;
 	margin-right: 0px;
+}
+.section-row > div[class^="col-"] {
+	padding: 0px;
 }
 .smooth {
 	-webkit-transition: all 0.31s ease;

@@ -55,11 +55,15 @@
 					}
 					h4 {
 						position: absolute;
-						bottom: 5px;
-						color: #FFF;
+					    bottom: 2px;
+					    left: 2px;
+					    right: 2px;
+					    color: #FFF;
+					    background: rgba(0, 0, 0, 0.56);
+					    border-radius: 0px 0px 4px 4px;
 					}
 					.story-title {
-						height: 25px;
+						height: 27px;
 					}
 					.story-image {
 						margin: 0px;
