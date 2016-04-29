@@ -1,4 +1,55 @@
 ---
 layout: default
 ---
-{{ content }}
+<div class="container" id="photo-page">
+	<div class="row section-row">
+		<div class="col-sm-9">
+			<div id="photo" class="clearfix">
+				<div class="cover-image">
+				    <img src="{{ site.url }}/resources/{{page.image }}" alt="{{page.title}}" class="img-responsive">
+				</div>
+				<div class="post-header">
+					<h1>{{page.title}}</h1>
+				</div>
+				<div class="post-content">
+					{{ content }}
+				</div>
+				<div class="post-footer">
+					{% include common/comments.html %}
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			{% if page.tags | size > 0 and page.tags != empty %}
+				<div class="section">
+					<div class="section-header">
+						Tags
+					</div>
+					<div class="section-body">
+						<ul class="tag-list">
+			                {% for tag in page.tags %}
+			                <li>
+			                	<a href="{{site.url}}/meaning/{{tag}}">{{tag}}</a>
+			                </li>
+			                {% endfor %}
+						</ul>
+					</div>
+				</div>
+			{% endif %}
+			<div class="section side-section">
+				<div class="section-header">
+					Recent photos
+				</div>
+				<div class="section-body">
+					<ul class="recent-post-list story-list">
+		                {% for post in site.categories.gallery limit:10 %}
+		                <li class="clearfix">
+		                	{% include post/photo_badge.html %}
+		                </li>
+		                {% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
