@@ -1,18 +1,18 @@
-<article class="story">
+<article class="story" itemscope itemtype="http://schema.org/BlogPosting">
 	<a href="{{ post.url | prepend: site.baseurl }}" class="story-image" style="{% if post.image %}background-image: url('{{ site.url }}/resources/{{post.image }}');{% endif %}"></a>
 	<h4 class="story-title" title="{{ post.title }}">
-		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		<a href="{{ post.url | prepend: site.baseurl }}" itemprop="headline">{{ post.title }}</a>
 	</h4>
 	<ul class="story-meta">
 		<li>
 			by 
-			<a href="{{ post.url | prepend: site.baseurl }}">
+			<a href="{{ post.url | prepend: site.baseurl }}" itemprop="author">
 				{% if post.author %}{{ post.author }} {% else %} {{ site.author }} {% endif %}
 			</a>
 		</li>
 		<li>
 			<i class="fa fa-clock-o"></i>
-			<time class="timeago" datetime="{{ post.date }}">{{ post.date }}</time>
+			<time class="timeago" datetime="{{ post.date }}" itemprop="datePublished">{{ post.date }}</time>
 		</li>
 	</ul>
 </article>

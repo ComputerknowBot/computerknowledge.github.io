@@ -1,19 +1,19 @@
-<article class="cover-story">
+<article class="cover-story" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="cover-image" style="{% if post.image %}background-image: url('{{ site.url }}/resources/{{post.image }}');{% endif %}"></div>
 	<a class="cover-navigate" href="{{ post.url | prepend: site.baseurl }}"></a>
 	<header class="cover-header">
 		<h2 class="cover-title">
-			<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			<a href="{{ post.url | prepend: site.baseurl }}" itemprop="headline">{{ post.title }}</a>
 		</h2>
 		<ul class="cover-meta">
 			<li>by 
-				<a href="{{ post.url | prepend: site.baseurl }}">
+				<a href="{{ post.url | prepend: site.baseurl }}" itemprop="author">
 					{% if post.author %}{{ post.author }} {% else %} {{ site.author }} {% endif %}
 				</a>
 			</li>
 			<li>
 				<i class="fa fa-clock-o"></i>
-				<time class="timeago" datetime="{{ post.date }}">{{ post.date }}</time>
+				<time class="timeago" datetime="{{ post.date }}" itemprop="datePublished">{{ post.date }}</time>
 			</li>
 		</ul>
 	</header>
