@@ -10,19 +10,20 @@
         {% endif %}
     </title>
     {% if page.description %}
-        <meta name="description" content="{{ page.description }}">
+        <meta name="description" content="{{ page.description }}" />
     {% else %}
-        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     {% endif %}
     {% if page.keywords %}
-        <meta name="keywords" content="{{ page.keywords }}">
+        <meta name="keywords" content="{{ page.keywords }}" />
     {% endif %}
     <meta name="copyright" content="&copy; Copyright 2010 to Present"/>
     {% if page.robots %}
-        <meta name="robots" content="{{ page.robots }}">
+        <meta name="robots" content="{{ page.robots }}" />
     {% else %}
-        <meta name="robots" content="index follow">
+        <meta name="robots" content="index follow" />
     {% endif %}
+    <meta name="google-site-verification" content="JAffL03qPAEQ6VTbkjh5GET4FEwW1hx5IG8Tk6Df1rM" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml">
     <link rel="icon" href="{{ site.url }}/logo.png?v=1.0.0" type="image/png">
