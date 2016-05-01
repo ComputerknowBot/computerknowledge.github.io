@@ -85,6 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 			}
 			line-height: 18px;
 			background-color: #3C3C3C;
+			height: 34px;
+			overflow: hidden;
 		}
 		.second-nav {
 			height: 46px;
@@ -129,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 	    bottom: 0px;
 	    color: #C1C1C1;
 	    margin-top: 50px;
-	    padding: 30px;
+	    padding: 10px;
 		position: absolute;
 	    width: 100%;
 	}
