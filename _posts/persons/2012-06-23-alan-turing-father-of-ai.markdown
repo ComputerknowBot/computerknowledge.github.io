@@ -1,11 +1,11 @@
 ---
 layout: post
-category: legends
+category: person
 title:  "Alan Turing - The father of AI"
 date:   2012-06-23 00:33:25 +0530
 meta: "A computer would deserve to be called intelligent if it could deceive a human into believing that it was human. – Alan Turing"
 image: "2012/06/23/Alan_Turing_photo.jpg"
-permalink: /legends/alan-turing-father-of-ai
+permalink: /person/alan-turing
 ---
 Alan Turing was born on June 23, 1912, in London. In his seminal 1936 paper, he proved that there cannot exist any universal algorithmic method of determining truth in mathematics, and that mathematics will always contain undecidable propositions. That paper also introduced the "Turing machine. His papers on the subject are widely acknowledged as the foundation of research in artificial intelligence.
 

@@ -1,11 +1,11 @@
 ---
 layout: post
-category: legends
+category: person
 title:  "Larry Wall - Programming is Hard, Let's Go Scripting"
 date:   2012-09-27 01:16:25 +0530
 meta: "Real programmers can write assembly code in any language. - Larry Wall"
 image: 2012/09/27/Larry_Wall.jpg
-permalink: /legends/larry-wall-programming-is-hard-lets-go
+permalink: /person/larry-wall
 ---
 Larry Wall (born September 27, 1954) is a computer programmer and author, most widely known for his creation of the Perl programming language in 1987.
 Wall grew up in south Los Angeles and then Bremerton, Washington, before starting higher education at Seattle Pacific University in 1976, majoring in chemistry and music and later Pre-med with a hiatus of several years working in the university's computing center before being graduated with a self-styled bachelor's degree in Natural and Artificial Languages.

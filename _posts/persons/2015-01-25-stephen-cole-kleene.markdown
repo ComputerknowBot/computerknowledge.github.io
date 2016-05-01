@@ -1,13 +1,13 @@
 ---
 layout: post
-category: legends
+category: person
 title:  "Stephen Cole Kleene"
 date:   2015-01-25 11:16:25 +0530
 meta: "Founder of recursion theory"
 image: 2015/01/25/421px-Kleene.jpg
-permalink: /legends/stephen-cole-kleene
+permalink: /person/stephen-cole-kleene
 ---
-Stephen Cole Kleene (January 5, 1909 – January 25, 1994) was an American mathematician. One of many distinguished students of Alonzo Church, Kleene, along with Alan Turing, Emil Post, and others, is best known as a founder of the branch of mathematical logic known as recursion theory, which subsequently helped to provide the foundations of theoretical computer science. Kleene's work grounds the study of which functions are computable. A number of mathematical concepts are named after him: Kleene hierarchy, Kleene algebra, the Kleene star (Kleene closure), Kleene's recursion theorem and the Kleene fixpoint theorem. He also invented regular expressions, and made significant contributions to the foundations of mathematical intuitionism.
+Stephen Cole Kleene (January 5, 1909 – January 25, 1994) was an American mathematician. One of many distinguished students of Alonzo Church, Kleene, along with [Alan Turing]({{ site.url }}/person/alan-turing), Emil Post, and others, is best known as a founder of the branch of mathematical logic known as recursion theory, which subsequently helped to provide the foundations of theoretical computer science. Kleene's work grounds the study of which functions are computable. A number of mathematical concepts are named after him: Kleene hierarchy, Kleene algebra, the Kleene star (Kleene closure), Kleene's recursion theorem and the Kleene fixpoint theorem. He also invented regular expressions, and made significant contributions to the foundations of mathematical intuitionism.
 
 Kleene was awarded the BA degree from Amherst College in 1930. He was awarded the Ph.D. in mathematics from Princeton University in 1934. His thesis, entitled A Theory of Positive Integers in Formal Logic, was supervised by Alonzo Church. In the 1930s, he did important work on Church's lambda calculus. In 1935, he joined the mathematics department at the University of Wisconsin–Madison, where he spent nearly all of his career. After two years as an instructor, he was appointed assistant professor in 1937.
 

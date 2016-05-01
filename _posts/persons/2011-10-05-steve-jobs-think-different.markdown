@@ -1,11 +1,11 @@
 ---
 layout: post
-category: legends
+category: person
 title:  "Steve Jobs - Think Different"
 date:   2011-10-05 03:03:25 +0530
 meta: "My favorite things in life don't cost any money. It's really clear that the most precious resource we all have is time. - Steve Jobs"
 image: 2011/10/05/steve-jobs-240.jpg
-permalink: /legends/steve-jobs-think-different
+permalink: /person/steve-jobs
 ---
 Steve Jobs was born in San Francisco, California, on February 24, 1955, to two University of Wisconsin graduate students who gave him up for adoption. Smart but directionless, Jobs experimented with different pursuits before starting Apple Computers with Steve Wozniak in 1976. Apple's revolutionary products, which include the iPod, iPhone and iPad, are now seen as dictating the evolution of modern technology. He died in 2011, following a long battle with pancreatic cancer.
 
