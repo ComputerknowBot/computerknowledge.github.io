@@ -28,3 +28,6 @@ sass:
 # syntax-highlighting:
 #   enabled : true
 #   css: syntax.css
+
+gems:
+  - jekyll-sitemap

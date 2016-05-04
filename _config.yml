@@ -24,3 +24,7 @@ markdown: kramdown
 # Sass settings
 sass:
     style: :compressed
+
+# GEMS
+gems:
+  - jekyll-sitemap
