@@ -2,27 +2,47 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        {% if page.title %}
-            {{ site.title | prepend: " - " | prepend: page.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}
-    </title>
+    {% if page.title %}
+        <title>{{ site.title | prepend: " - " | prepend: page.title }}</title>
+        <meta itemprop="name" content="{{ site.title | prepend: " - " | prepend: page.title }}">
+        <meta property="og:title" content="{{ site.title | prepend: " - " | prepend: page.title }}" />
+        <meta name="twitter:title" content="{{ site.title | prepend: " - " | prepend: page.title }}">
+    {% else %}
+        <title>{{ site.title }}</title>
+        <meta itemprop="name" content="{{ site.title }}">
+        <meta property="og:title" content="{{ site.title }}" />
+        <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+    
     {% if page.description %}
         <meta name="description" content="{{ page.description }}" />
+        <meta itemprop="description" content="{{ page.description }}">
+        <meta name="twitter:description" content="{{ page.description }}">
     {% else %}
-        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {% endif %}
+
     {% if page.keywords %}
         <meta name="keywords" content="{{ page.keywords }}" />
     {% endif %}
-    <meta name="copyright" content="&copy; Copyright 2010 to Present"/>
+
     {% if page.robots %}
         <meta name="robots" content="{{ page.robots }}" />
     {% else %}
         <meta name="robots" content="index follow" />
     {% endif %}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="article" />
+
+    {% if page.image %}
+        <meta itemprop="image" content="{{ site.url }}/resources/{{ page.image }}">
+        <meta property="og:image" content="{{ site.url }}/resources/{{ page.image }}" />
+        <meta name="twitter:image" content="{{ site.url }}/resources/{{ page.image }}">
+    {% endif %}
+    <meta name="copyright" content="&copy; Copyright 2010 to Present"/>
     <meta name="google-site-verification" content="JAffL03qPAEQ6VTbkjh5GET4FEwW1hx5IG8Tk6Df1rM" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" type="application/rss+xml">
