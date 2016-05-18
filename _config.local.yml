@@ -5,6 +5,7 @@ assets_version: 0.0.0
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost" # the base hostname & protocol for your site
+name: Computer Knowledge
 title: "Computer Knowledge - Just more than infinite"
 description: "Help, tips and tricks for advance technical users for their help. Some posts also relevant for those facing other problems."
 
