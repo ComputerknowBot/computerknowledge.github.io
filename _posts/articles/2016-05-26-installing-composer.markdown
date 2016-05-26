@@ -3,6 +3,8 @@ layout: post
 category: article
 title:  "Installing composer on Ubuntu 14.04"
 date: 2016-05-26 23:09:25 +0530
+image: 2016/05/26/composer.png
+meta: This article explains about installing composer on Ubuntu 14.04
 permalink: /article/installing-composer-on-ubuntu
 author: Ritesh Shrivastav
 ---
